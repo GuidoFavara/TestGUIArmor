@@ -1,0 +1,307 @@
+
+.character-sheet {
+    padding-top: 0px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &.profile-top {
+        padding-top: 20px;
+        background: rgba(0,0,0, 0.8);
+    }
+
+    &.profile-low, &.merc, &.iron-golem {
+        background: rgba(0,0,0, 0.8);
+    }
+}
+
+/* Tabs */
+
+.visible-mobile {
+    display: none;
+}
+
+.tabs-menu {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+}
+
+.mdl-tabs__tab-bar {
+    border-bottom: none;
+}
+
+.mdl-tabs__tab {
+    background: rgba(0,0,0, 0.5);
+    margin-left: 5px;
+}
+
+a.mdl-tabs__tab {
+    color: #a99877;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+    background: rgba(0,0,0, 0.8);
+    color: #FFEAD4;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active::after {
+    background: none;
+}
+
+.menu-grid {
+    position: relative;
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    height: 50px;
+    padding: 0px;
+    list-style-type: none;
+
+    li {
+      float: left;
+      margin-right: 15px;
+      text-align: center;
+      border-bottom: 2px solid #312a1e;
+      padding: 5px 15px 5px 15px;
+      &:hover {
+        border-bottom: 2px solid #f3e6d0;
+      }
+    }
+
+    i {
+      color: #f3e6d0;
+    }
+
+    a {
+      height: 50px;
+      width: 50px;
+      color: #a99877;
+      text-decoration: none;
+    }
+
+    span {
+      display: block;
+    }
+}
+
+.broadcast {
+    width: 900px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.broadcast-text {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.mdl-spinner {
+    width: 60px;
+    height: 60px;
+}
+
+li.fcr::before {
+    content: "\E923";
+}
+
+li.fhr::before {
+    content: "\E422";
+}
+
+li.ias::before {
+    content: "\E863";
+}
+
+li.frw::before {
+    content: "\E566";
+}
+
+li.mf::before {
+    content: "\E420";
+}
+
+li.cb::before {
+    content: "\E90E";
+}
+
+li.ds::before {
+    content: "\E55C";
+}
+
+li.dr::before {
+    content: "\E32A";
+}
+
+li.aura::before {
+    content: "\E906";
+}
+
+.last-online {
+    padding-left: 25px;
+
+    p {
+        color: #a99fff;
+        font-size: 12px;
+    }
+}
+
+/* Stash, Iventory and Cube. */
+
+.tab-header {
+    text-align: center;
+}
+
+.inv-item {
+    background: #0b0b26;
+    position: absolute;
+}
+
+.inv-item .item {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background: none;
+    border: none;
+}
+
+.inv-item .item:hover {
+    border: none;
+    background: #0e1207;
+}
+
+/* X positions */
+.pos-x-0 {
+    left: 0px;
+}
+
+.pos-x-1 {
+    left: 28px;
+}
+
+.pos-x-2 {
+    left: 56px;
+}
+
+.pos-x-3 {
+    left: 84px;
+}
+
+.pos-x-4 {
+    left: 112px;
+}
+
+.pos-x-5 {
+    left: 140px;
+}
+
+.pos-x-6 {
+    left: 168px;
+}
+
+.pos-x-7 {
+    left: 196px;
+}
+
+.pos-x-8 {
+    left: 224px;
+}
+
+.pos-x-9 {
+    left: 252px;
+}
+
+
+/* Y positions */
+.pos-y-0 {
+    top: 0px;
+}
+
+.pos-y-1 {
+    top: 28px;
+}
+
+.pos-y-2 {
+    top: 56px;
+}
+
+.pos-y-3 {
+    top: 84px;
+}
+
+.pos-y-4 {
+    top: 112px;
+}
+
+.pos-y-5 {
+    top: 140px;
+}
+
+.pos-y-6 {
+    top: 168px;
+}
+
+.pos-y-7 {
+    top: 196px;
+}
+
+.pos-y-8 {
+    top: 224px;
+}
+
+@media (max-width: 767px) {
+
+    .last-online {
+        padding-left: 20px;
+    }
+    
+    .visible-mobile {
+        display: inline-block;
+        vertical-align: -6px;
+    }
+
+    .visible-desktop {
+        display: none;
+    }
+
+    .broadcast {
+        width: 100%;
+    }
+
+    .equipped-tab, .inventory-tab {
+        margin-top: 50px;
+    }
+
+    .menu-grid {
+        height: 160px;
+    }
+
+    .menu {
+        li {
+            padding: 0px 0px 15px 0px;
+            margin: 0px;
+            width: 33%;
+        }
+    }
+
+    .mdl-tooltip {
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        margin-top: 0px !important;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .character-sheet, .menu-grid {
+        width: 900px;
+        margin: 0px auto 0px auto;
+    }
+}

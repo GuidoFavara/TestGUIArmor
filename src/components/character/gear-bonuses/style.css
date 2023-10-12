@@ -1,0 +1,35 @@
+.gear-bonuses {
+    padding-left: 25px;
+}
+
+.gear-bonuses h3 {
+    margin: 0px 0px 15px 0px;
+}
+
+.gear-bonuses ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+}
+
+.gear-bonuses li {
+    color: #a99fff;
+    padding-left: 20px;
+    position: relative;
+}
+
+.gear-bonuses li::before {
+    position: absolute;
+    left: 0px;
+    font-family: "Material Icons"
+}
+
+.gear-bonuses .bonus-value {
+    color: #d0ccff;
+}
+
+@media (max-width: 767px) {
+    .gear-bonuses {
+        padding-left: 20px;
+    }
+}

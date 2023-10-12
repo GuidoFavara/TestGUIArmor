@@ -1,0 +1,11 @@
+.cube-tab {
+    min-height: 112px;
+}
+
+.cube-grid {
+    width: 84px;
+    height: 112px;
+    position: relative;
+    margin: 0px auto;
+    background: url("../assets/inv_grid.png");
+}

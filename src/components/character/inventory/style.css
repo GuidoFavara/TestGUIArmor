@@ -1,0 +1,12 @@
+.inventory-tab {
+    min-height: 250px;
+    position: relative;
+}
+
+.inv-grid {
+    width: 280px;
+    height: 112px;
+    position: relative;
+    margin: 0px auto;
+    background: url("../assets/inv_grid.png");
+}

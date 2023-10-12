@@ -1,0 +1,110 @@
+html, body, #root {min-height: 100%;}
+body {
+    background: url("assets/bg-repeat.jpg") #000;
+    color: #FFEAD4;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 1px 1px 0 #000;
+}
+
+#root {
+    height: 100%;
+}
+.app {
+    min-height: 1000px;
+    height: 100%;
+    width: 100%;
+    background: url("assets/bg.jpg") 50% 0 no-repeat;
+    -webkit-background-size: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 1920px) {
+    .app {
+        background-image: url("assets/bg-1920.jpg");
+    }
+}
+
+@media (min-width: 1920px) {
+    .app {
+        background-image: url("assets/bg-full.jpg");
+    }
+}
+
+@media (max-width: 1680px) {
+    .app {
+        background-image: url("assets/bg-1680.jpg");
+    }
+}
+
+@media (max-width: 1440px) {
+    .app {
+        background-image: url("assets/bg.jpg");
+    }
+}
+
+.mdl-tooltip {
+    background: rgba(0,0,0, 0.9);
+    width: 300px;
+    max-width: 300px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Exocet Light", sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 23px;
+    color: #FFEAD4;
+}
+
+h1.char-name {
+    margin: 0px;
+    text-align: center;
+    &.ladder {
+        font-size: 14px;
+        color: #957D65;
+    }
+    &.hardcore {
+        font-size: 14px;
+        color: #9c0e06;
+    }
+    &.classic {
+        font-size: 14px;
+        color: #d6b665;
+    }
+    &.hc-dead {
+        font-size: 14px;
+        color: #9c0e06;
+    }
+}
+
+h2 {
+    font-size: 19px;
+    line-height: 19px;
+    color: #a99877;
+}
+
+h2.char-class {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    font-size: 12px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.underlined {
+    border-bottom: 2px solid #312a1e;
+}

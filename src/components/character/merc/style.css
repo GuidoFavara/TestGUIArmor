@@ -1,0 +1,108 @@
+.merc {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.merc-inner {
+    padding: 0px 15px 0px 15px;
+}
+
+.merc-bonuses {
+    width: 45%;
+    min-height: 250px;
+    float: left;
+}
+
+.merc-items {
+    width: 45%;
+    min-height: 250px;
+    float: right;
+    position: relative;
+
+    .item.location-1, .item-backdrop.location-1 {
+        left: 162px;
+    }
+
+    .item.location-3, .item-backdrop.location-3 {
+        left: 162px;
+    }
+
+    .item.location-5, .item-backdrop.location-5 {
+        left: 268px;
+    }
+}
+
+.merc-text {
+    text-align: center;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.merc-items .merc-name {
+    margin-top: 15px;
+    line-height: 1.35;
+}
+
+.merc-attributes {
+    color: #a99877;
+}
+.merc-items .merc-type {
+    font-size: 14px;
+    color: #d6b665;
+}
+
+.merc-items .merc-aura {
+    font-size: 14px;
+    color: #a99fff;
+    margin: 8px 0px 8px 0px;
+}
+
+.merc-items .merc-attributes {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.merc-bonuses ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+}
+
+.merc-bonuses li {
+    padding-left: 20px;
+    position: relative;
+    color: #a99fff;
+}
+
+.merc-bonuses li::before {
+    position: absolute;
+    left: 0px;
+    font-family: "Material Icons"
+}
+
+.merc-bonuses .bonus-value {
+    color: #d0ccff;
+}
+
+@media (max-width: 900px) {
+    .merc-bonuses {
+        width: 100%;
+    }
+    .merc-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .merc-inner {
+        padding: 0px;
+    }
+
+    .merc-bonuses {
+        width: auto;
+        padding: 0px 20px 0px 20px;
+    }
+}

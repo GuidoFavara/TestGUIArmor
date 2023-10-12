@@ -1,0 +1,382 @@
+.equipped-items {
+    max-width: 400px;
+    min-height: 250px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.item {
+    -moz-box-shadow:    inset 0 0 10px #2B2B2B;
+    -webkit-box-shadow: inset 0 0 10px #2B2B2B;
+    box-shadow:         inset 0 0 10px #2B2B2B;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.item-backdrop {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.item.quality-1:hover {
+    border: 1px solid #c2c2c2;
+}
+
+.item.quality-2:hover {
+    border: 1px solid #c2c2c2;
+}
+
+.item.quality-3:hover {
+    border: 1px solid #c2c2c2;
+}
+
+.item.quality-4:hover {
+    border: 1px solid #5050ab;
+}
+
+.item.quality-5:hover {
+    border: 1px solid #19fa00;
+}
+
+.item.quality-6:hover {
+    border: 1px solid #d6b665;
+}
+
+.item.quality-7:hover {
+    border: 1px solid #948065;
+}
+
+.item.inv-item:hover {
+    border: 1px solid #000;
+}
+
+/* Helm location */
+.item.location-1, .item-backdrop.location-1 {
+    position: absolute;
+    top: 0px;
+    left: 172px;
+    width: 56px;
+    height: 56px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-1 {
+    background: url("./assets/helm.png") no-repeat;
+    z-index: 1;
+}
+
+/* Amulet location */
+.item.location-2, .item-backdrop.location-2 {
+    position: absolute;
+    top: 28px;
+    left: 240px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-2 {
+    background: url("./assets/inv_ring_amulet.png") no-repeat;
+    z-index: 1;
+}
+
+/* Chest location */
+.item.location-3, .item-backdrop.location-3 {
+    position: absolute;
+    top: 70px;
+    left: 172px;
+    width: 56px;
+    height: 84px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-3 {
+    background: url("./assets/inv_armor.png") no-repeat;
+    z-index: 1;
+}
+
+/* Left hand weapon location */
+.item.location-4, .item-backdrop.location-4 {
+    position: absolute;
+    top: 39px;
+    left: 59px;
+    width: 56px;
+    height: 111px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-4 {
+    background: url("./assets/inv_weapons.png") no-repeat;
+    z-index: 1;
+}
+
+/* Right hand weapon location */
+.item.location-5, .item-backdrop.location-5 {
+    position: absolute;
+    top: 39px;
+    left: 287px;
+    width: 56px;
+    height: 111px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-5 {
+    background: url("./assets/inv_weapons.png") no-repeat;
+    z-index: 1;
+}
+
+/* Left ring location */
+.item.location-6, .item-backdrop.location-6 {
+    position: absolute;
+    top: 171px;
+    left: 127px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-6 {
+    background: url("./assets/ring.png") no-repeat;
+    z-index: 1;
+}
+
+/* Right ring location */
+.item.location-7, .item-backdrop.location-7 {
+    position: absolute;
+    top: 171px;
+    left: 245px;
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-7 {
+    background: url("./assets/ring.png") no-repeat;
+    z-index: 1;
+}
+
+/* Belt location */
+.item.location-8, .item-backdrop.location-8 {
+    position: absolute;
+    top: 171px;
+    left: 169px;
+    width: 62px;
+    height: 33px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-8 {
+    background: url("./assets/inv_belt.png") no-repeat;
+    z-index: 1;
+}
+
+/* Boots location */
+.item.location-9, .item-backdrop.location-9 {
+    position: absolute;
+    top: 171px;
+    left: 287px;
+    width: 56px;
+    height: 56px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-9 {
+    background: url("./assets/inv_boots.png") no-repeat;
+    z-index: 1;
+}
+
+/* Gloves location */
+.item.location-10, .item-backdrop.location-10 {
+    position: absolute;
+    top: 171px;
+    left: 59px;
+    width: 56px;
+    height: 56px;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-10 {
+    background: url("./assets/inv_helm_glove.png") no-repeat;
+    z-index: 1;
+}
+
+/* Alternative left hand weapon location */
+.item.location-11, .item-backdrop.location-11 {
+    position: absolute;
+    top: 39px;
+    left: 59px;
+    width: 56px;
+    height: 111px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-11 {
+    background: url("./assets/inv_weapons.png") no-repeat;
+    z-index: 1;
+}
+
+/* Alterntive right hand weapon location */
+.item.location-12, .item-backdrop.location-12 {
+    position: absolute;
+    top: 39px;
+    left: 287px;
+    width: 56px;
+    height: 111px;
+    white-space: nowrap;
+    text-align: center;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.item-backdrop.location-12 {
+    background: url("./assets/inv_weapons.png") no-repeat;
+    z-index: 1;
+}
+
+/* Show on swap */
+.swap-index-1 .item.location-4, .swap-index-1 .item-backdrop.location-4 {
+    display: none;
+}
+
+.swap-index-1 .item.location-5, .swap-index-1 .item-backdrop.location-5 {
+    display: none;
+}
+
+.swap-index-0 .item.location-11, .swap-index-0 .item-backdrop.location-11 {
+    display: none;
+}
+
+.swap-index-0 .item.location-12, .swap-index-0 .item-backdrop.location-12 {
+    display: none;
+}
+
+/* Tabs */
+.swap-tab {
+    position: absolute;
+    font-family: "Exocet Light", sans-serif;
+    top: 0px;
+    left: 0px;
+    width: 98px;
+    height: 25px;
+    padding: 5px;
+}
+
+.swap-tab .mdl-tabs__tab-bar {
+    height: 25px;
+    line-height: 28px;
+}
+
+.swap-tab .mdl-ripple {
+    width: 25px;
+    height: 25px;
+}
+
+.swap-tab .mdl-tabs__tab {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin-left: 2px;
+    line-height: 28px;
+}
+
+/* Left tab */
+.left-swap {
+    top: 9px;
+    left: 32px;
+}
+
+/* Right tab */
+.right-swap {
+    top: 9px;
+    left: 261px;
+}
+
+@media (max-width: 767px) {
+
+    /* Helm location */
+    .item.location-1, .item-backdrop.location-1 {
+        left: 138px;
+    }
+
+    /* Amulet location */
+    .item.location-2, .item-backdrop.location-2 {
+        left: 206px;
+    }
+
+    /* Chest location */
+    .item.location-3, .item-backdrop.location-3 {
+        left: 138px;
+    }
+
+    /* Left hand weapon location */
+    .item.location-4, .item-backdrop.location-4 {
+        left: 25px;
+    }
+
+    /* Right hand weapon location */
+    .item.location-5, .item-backdrop.location-5 {
+        left: 253px;
+    }
+
+    /* Left ring location */
+    .item.location-6, .item-backdrop.location-6 {
+        left: 93px;
+    }
+
+    /* Right ring location */
+    .item.location-7, .item-backdrop.location-7 {
+        left: 211px;
+    }
+
+    /* Belt location */
+    .item.location-8, .item-backdrop.location-8 {
+        left: 135px;
+    }
+
+    /* Boots location */
+    .item.location-9, .item-backdrop.location-9 {
+        left: 253px;
+    }
+
+    /* Gloves location */
+    .item.location-10, .item-backdrop.location-10 {
+        left: 25px;
+    }
+
+    /* Alternative left hand weapon location */
+    .item.location-11, .item-backdrop.location-11 {
+        left: 25px;
+    }
+
+    /* Alterntive right hand weapon location */
+    .item.location-12, .item-backdrop.location-12 {
+        left: 253px;
+    }
+
+    .left-swap {
+        left: 0px;
+    }
+
+    .right-swap {
+        left: 227px;
+    }
+
+}
