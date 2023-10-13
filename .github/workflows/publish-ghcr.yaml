@@ -3,7 +3,7 @@ name: Docker Image CI for GHCR
 on:
   push
 
-  jobs: 
+jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
@@ -12,5 +12,6 @@ on:
         run: |
           docker login --username guidofavara --password ${{ secrets.GH_PAT }} ghcr.io
           docker build . --tag ghcr.io/guidofavara/d2-armory-guido-ombu:latest
-          docker push ghcr.io/guidofavara/d2-armory-guido-ombu:latest 
+          docker push ghcr.io/guidofavara/d2-armory-guido-ombu:latest
+
           
