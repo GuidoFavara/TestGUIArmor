@@ -247,25 +247,25 @@ export default class Character extends React.Component {
               <li>
                 <a
                   title="Checkout the ladder"
-                  href="http://ladder.slashdiablo.net/exp/overall"
+                  href="https://ombuserver.com.ar/"
                 >
                   <Icon name="timeline" />
                   <span>LADDER</span>
                 </a>
               </li>
               <li>
-                <a title="Search the armory" href="/">
+                <a title="Buscar en la Armería" href="/">
                   <Icon name="search" />
-                  <span>SEARCH</span>
+                  <span>BUSCAR</span>
                 </a>
               </li>
               <li>
                 <a
-                  title="Slash subreddit"
-                  href="https://reddit.com/r/slashdiablo"
+                  title="Discord Server"
+                  href="https://google.com.ar"
                 >
                   <Icon name="comment" />
-                  <span>REDDIT</span>
+                  <span>DISCORD</span>
                 </a>
               </li>
             </ul>

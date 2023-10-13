@@ -37,18 +37,18 @@ export default class Home extends React.Component {
             <Grid className="menu-grid">
                 <Cell col={12} tablet={12} phone={12}>
                     <ul className="menu">
-                        <li><a title="Checkout the ladder" href="http://ladder.slashdiablo.net/exp/overall"><Icon name="timeline" /><span>LADDER</span></a></li>
-                        <li><a title="Slash subreddit" href="https://reddit.com/r/slashdiablo"><Icon name="comment" /><span>REDDIT</span></a></li>
+                        <li><a title="Mantente Actualizado" href="https://www.facebook.com/groups/ombuserver"><Icon name="timeline" /><span>Facebook</span></a></li>
+                        <li><a title="Discord Server" href="https://google.com"><Icon name="comment" /><span>Discord</span></a></li>
                     </ul>
                 </Cell>
             </Grid>
-            <h1>The armory</h1>
-            <p>This is where you can search all the Slashdiablo characters and get a detailed view of their skills, items, stats and mercenary.</p>
+            <h1>El Arsenal de Ombu Server</h1>
+            <p>Aquí es donde puedes buscar todos los personajes de OmbuServer y obtener una vista detallada de sus habilidades, equipamientos, estadísticas y mercenarios..</p>
             <div className="searcher">
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" onChange={this.handleChange} />
-                    {this.state.error === true && <p className="error-label">Invalid character name, please try another.</p>}
-                    <button className="mdl-button mdl-button--raised mdl-button--colored" type="submit">Search</button>
+                    {this.state.error === true && <p className="error-label">Nombre de personaje inválido, intenta con otro.</p>}
+                    <button className="mdl-button mdl-button--raised mdl-button--colored" type="submit">BUSCAR</button>
                 </form>
             </div>
 
